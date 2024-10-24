@@ -1,0 +1,83 @@
+[
+  {
+    "playerId": 1,
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/QDJnhhH/sakib.webp",
+    "playerType": "All-rounder",
+    "playingStyle" :"Left-Hand-Bat",
+    "biddingPrice": 900000
+  },
+  {
+    "playerId": 2,
+    "name": "Ben Stokes",
+    "country": "England",
+    "image": "https://i.ibb.co.com/dbK9qJ4/ben-stoke.jpg",
+    "playerType": "All-rounder",
+    "playingStyle" :"Fast-Bowler",
+    "biddingPrice": 500000
+  },
+  {
+    "playerId": 3,
+    "name": "David Warner",
+    "country": "Australia",
+    "image": "https://i.ibb.co.com/DGmtkmG/warner.jpg",
+    "playerType": "Batsman",
+    "playingStyle" :"Left-Hand-Bat",
+    "biddingPrice": 700000
+  },
+  {
+    "playerId": 4,
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "image": "https://i.ibb.co.com/x5SvnS3/kane-williamson.webp",
+    "playerType": "Batsman",
+    "playingStyle" :"Right-Hand-Bat",
+    "biddingPrice": 650000
+  },
+  {
+    "playerId": 5,
+    "name": "Pat Cummins",
+    "country": "Australia",
+    "image": "https://i.ibb.co.com/6wFSwNW/pet-cummins.webp", 
+    "playerType": "Bowler",
+    "playingStyle" :"Fast-Bowler",
+    "biddingPrice": 500000
+  },
+  {
+    "playerId": 6,
+    "name": "Virat Kohli",
+    "country": "India",
+    "image": "https://i.ibb.co.com/BKf4cqm/virat.webp",
+    "playerType": "Batsman",
+    "playingStyle" :"Right-Hand-Bat",
+    "biddingPrice": 800000
+  },
+  {
+    "playerId": 7,
+    "name": "Andre Russell",
+    "country": "West Indies",
+    "image": "https://i.ibb.co.com/3fdtJ66/russel.webp",
+    "playerType": "All-rounder",
+    "playingStyle" :"Fast-Bowler",
+    "biddingPrice": 660000
+  },
+  {
+    "playerId": 8,
+    "name": "Taskin Ahmed",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/CPvSyGv/Taskin.jpg",
+    "playerType": "Bowler",
+    "playingStyle" :"Fast-Bowler",
+    "biddingPrice": 780000
+  },
+  {
+    "playerId": 9,
+    "name": "Trent Boult",
+    "country": "New Zealand",
+    "image": "https://i.ibb.co.com/YNFwkxJ/bolt.webp",
+    "playerType": "Bowler",
+    "playingStyle" :"Fast-Bowler",
+    "biddingPrice": 870000
+  }
+]
