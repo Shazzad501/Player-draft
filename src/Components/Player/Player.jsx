@@ -2,7 +2,6 @@ import React from 'react';
 
 const Player = ({player}) => {
   const {name, country, image, playerType, playingStyle, biddingPrice} = player;
-  console.log(player);
   return (
     <div>
       <div className="card border-2 p-5">
@@ -16,7 +15,7 @@ const Player = ({player}) => {
           <h2 className="font-bold text-xl mt-4"><i className="fa-solid fa-user-large"></i>
           &nbsp;&nbsp;{name}</h2>
           <div className='mt-3 flex justify-between items-center'>
-            <p className='font-semibold text-base'><i class="fa-solid fa-flag"></i>&nbsp;&nbsp;{country}</p>
+            <p className='font-semibold text-base'><i className="fa-solid fa-flag"></i>&nbsp;&nbsp;{country}</p>
             <button className='btn btn-sm'>{playerType}</button>
           </div>
           <hr className='my-4 w-full'/>
