@@ -21,7 +21,7 @@ function App() {
 
   // coin handle function
   const handleCoin = ()=>{
-    toast.success("Coin successfully Added!!");
+    toast.info("Coin successfully Added!!");
     setCoin(coin + 500);
   }
   // handle toggle btn
@@ -44,14 +44,14 @@ function App() {
       const isExist = choosePlayer.find(prevplayer=> prevplayer.playerId === player.playerId);
 
 
-      if(!isExist && (choosePlayer.length < 7) && (coin > player.biddingPrice)){
+      if(!isExist && (choosePlayer.length < 6) && (coin > player.biddingPrice)){
         setCoin(coin - player.biddingPrice)
         setChoosePlayer([...choosePlayer, player]);
         toast.success("Player successfully added!!")
       }
       else{
        isExist && toast.error("Player already existed!!");
-       !(choosePlayer.length < 7) && toast.error("Maximum player added!!")
+       !(choosePlayer.length < 6) && toast.error("Maximum player added!!")
        !(coin > player.biddingPrice) && toast.error("Not enought coin!!")
       }
     }
@@ -61,7 +61,7 @@ function App() {
     const handleRemove = (id)=>{
       const updatePlayer = choosePlayer.filter(player => player.playerId !== id);
       setChoosePlayer(updatePlayer);
-      toast.info("Player deleted!!!  If you add new player click Add more player button.")
+      toast.warn("Player deleted!!!  If you add new player click Add more player button.")
     }
   return (
     <>

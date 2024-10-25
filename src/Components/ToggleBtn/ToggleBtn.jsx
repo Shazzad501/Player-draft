@@ -9,7 +9,7 @@ const ToggleBtn = ({handleToggleBtn, isActive, handleChoosePlayer, choosePlayer,
       <div className=' w-11/12 mx-auto flex justify-between items-center mb-9'>
           <div>
             {isActive.player ? <h2 className='font-bold text-base'>Available Player</h2> :
-            <h2 className='font-bold text-base'>Selected Player {choosePlayer.length}/7</h2>}
+            <h2 className='font-bold text-base'>Selected Player {choosePlayer.length}/6</h2>}
           </div>
 
           <div className='flex gap-0 border-2 rounded-lg'>
