@@ -1,7 +1,7 @@
 import "./Banner.css"
 const Banner = ({handleCoin}) => {
   return (
-    <div className="w-11/12 mx-auto bg-black rounded-lg mb-14">
+    <div className="w-11/12 mx-auto bg-black rounded-lg mb-14 mt-28">
       <div className="flex items-center justify-center text-center flex-col banner p-10 text-white">
         <div>
           <img src="../../src/assets/banner-main.png" alt="" />

@@ -22,7 +22,7 @@ function App() {
   // coin handle function
   const handleCoin = ()=>{
     toast.success("Coin successfully Added!!");
-    setCoin(coin + 1000000);
+    setCoin(coin + 500);
   }
   // handle toggle btn
   const handleToggleBtn = (sys) =>{

@@ -26,7 +26,7 @@ const Player = ({player, handleChoosePlayer}) => {
             <p className='font-semibold text-sm text-gray-500'>{playingStyle}</p>
           </div>
           <div className="card-actions flex items-center justify-between mt-5">
-            <p className='font-semibold text-sm'>Price: ${biddingPrice}</p>
+            <p className='font-semibold text-sm'>Price: ${biddingPrice}M</p>
             <button onClick={()=> handleChoosePlayer(player)} className="btn btn-sm">Choose Player</button>
           </div>
         </div>

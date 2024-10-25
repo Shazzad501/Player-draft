@@ -6,7 +6,7 @@
     "image": "https://i.ibb.co.com/QDJnhhH/sakib.webp",
     "playerType": "All-rounder",
     "playingStyle" :"Left-Hand-Bat",
-    "biddingPrice": 900000
+    "biddingPrice": 190
   },
   {
     "playerId": 2,
@@ -15,7 +15,7 @@
     "image": "https://i.ibb.co.com/dbK9qJ4/ben-stoke.jpg",
     "playerType": "All-rounder",
     "playingStyle" :"Fast-Bowler",
-    "biddingPrice": 500000
+    "biddingPrice": 150
   },
   {
     "playerId": 3,
@@ -24,7 +24,7 @@
     "image": "https://i.ibb.co.com/DGmtkmG/warner.jpg",
     "playerType": "Batsman",
     "playingStyle" :"Left-Hand-Bat",
-    "biddingPrice": 700000
+    "biddingPrice": 170
   },
   {
     "playerId": 4,
@@ -33,7 +33,7 @@
     "image": "https://i.ibb.co.com/C5ZTpmB/kane-williamson.jpg",
     "playerType": "Batsman",
     "playingStyle" :"Right-Hand-Bat",
-    "biddingPrice": 650000
+    "biddingPrice": 165
   },
   {
     "playerId": 5,
@@ -42,7 +42,7 @@
     "image": "https://i.ibb.co.com/6wFSwNW/pet-cummins.webp", 
     "playerType": "Bowler",
     "playingStyle" :"Fast-Bowler",
-    "biddingPrice": 500000
+    "biddingPrice": 150
   },
   {
     "playerId": 6,
@@ -51,7 +51,7 @@
     "image": "https://i.ibb.co.com/BKf4cqm/virat.webp",
     "playerType": "Batsman",
     "playingStyle" :"Right-Hand-Bat",
-    "biddingPrice": 800000
+    "biddingPrice": 180
   },
   {
     "playerId": 7,
@@ -60,7 +60,7 @@
     "image": "https://i.ibb.co.com/3fdtJ66/russel.webp",
     "playerType": "All-rounder",
     "playingStyle" :"Fast-Bowler",
-    "biddingPrice": 660000
+    "biddingPrice": 166
   },
   {
     "playerId": 8,
@@ -69,7 +69,7 @@
     "image": "https://i.ibb.co.com/CPvSyGv/Taskin.jpg",
     "playerType": "Bowler",
     "playingStyle" :"Fast-Bowler",
-    "biddingPrice": 780000
+    "biddingPrice": 178
   },
   {
     "playerId": 9,
@@ -78,6 +78,6 @@
     "image": "https://i.ibb.co.com/YNFwkxJ/bolt.webp",
     "playerType": "Bowler",
     "playingStyle" :"Fast-Bowler",
-    "biddingPrice": 870000
+    "biddingPrice": 187
   }
 ]

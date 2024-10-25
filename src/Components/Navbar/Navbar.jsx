@@ -1,6 +1,6 @@
 const Navbar = ({coin}) => {
   return (
-    <div className="w-11/12 py-6 mx-auto flex items-center justify-between">
+    <div className="w-11/12 py-3 mx-auto flex items-center justify-between fixed top-0 left-0 right-0 z-50 bg-white/30 backdrop-blur-lg">
       <div>
         <img src="../../src/assets/logo.png" alt=""/>
       </div>
@@ -11,7 +11,7 @@ const Navbar = ({coin}) => {
           <li className="font-bold text-base cursor-pointer">Teams</li>
           <li className="font-bold text-base cursor-pointer">Schedules</li>
         </ul>
-        <button className="btn flex items-center font-bold text-base bg-white hover:bg-white"><span>{coin}</span>Coin<img src="../../src/assets/coin.png" className="w-5" alt="" /></button>
+        <button className="btn flex items-center font-bold text-base bg-white hover:bg-white"><span>{coin}M</span><img src="../../src/assets/coin.png" className="w-5" alt="" /></button>
       </div>
     </div>
   );
