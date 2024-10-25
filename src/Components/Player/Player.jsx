@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Player = ({player}) => {
-  const {name, country, image, playerType, playingStyle, biddingPrice} = player;
+const Player = ({player, handleChoosePlayer}) => {
+  const {playerId, name, country, image, playerType, playingStyle, biddingPrice} = player;
   return (
     <div>
       <div className="card border-2 p-5">
@@ -12,7 +12,8 @@ const Player = ({player}) => {
             className="rounded-xl w-full h-full object-cover" />
         </figure>
         <div className="">
-          <h2 className="font-bold text-xl mt-4"><i className="fa-solid fa-user-large"></i>
+          <h2 className="font-bold text-xl mt-4 flex items-center">
+            <div className='w-10 h-10 rounded-full border-2 border-black'><img className='w-full h-full object-cover rounded-full' src={image} alt="" /></div>
           &nbsp;&nbsp;{name}</h2>
           <div className='mt-3 flex justify-between items-center'>
             <p className='font-semibold text-base'><i className="fa-solid fa-flag"></i>&nbsp;&nbsp;{country}</p>
@@ -26,7 +27,7 @@ const Player = ({player}) => {
           </div>
           <div className="card-actions flex items-center justify-between mt-5">
             <p className='font-semibold text-sm'>Price: ${biddingPrice}</p>
-            <button className="btn btn-sm">Choose Player</button>
+            <button onClick={()=> handleChoosePlayer(player)} className="btn btn-sm">Choose Player</button>
           </div>
         </div>
       </div>

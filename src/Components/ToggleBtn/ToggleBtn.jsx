@@ -1,13 +1,15 @@
+import { useState } from "react";
 import AllPlayers from "../AllPlayers/AllPlayers";
 import SelectedPlayer from "../SelectedPlayer/SelectedPlayer";
 
-const ToggleBtn = ({handleToggleBtn, isActive}) => {
+const ToggleBtn = ({handleToggleBtn, isActive, handleChoosePlayer, choosePlayer, handleRemove}) => {
+    
   return (
     <div>
       <div className=' w-11/12 mx-auto flex justify-between items-center mb-9'>
           <div>
             {isActive.player ? <h2 className='font-bold text-base'>Available Player</h2> :
-            <h2 className='font-bold text-base'>Selected Player 1/9</h2>}
+            <h2 className='font-bold text-base'>Selected Player {choosePlayer.length}/7</h2>}
           </div>
 
           <div className='flex gap-0 border-2 rounded-lg'>
@@ -21,7 +23,7 @@ const ToggleBtn = ({handleToggleBtn, isActive}) => {
       </div>
       <div>
         {
-          isActive.player ? <AllPlayers></AllPlayers> : <SelectedPlayer></SelectedPlayer>
+          isActive.player ? <AllPlayers handleChoosePlayer={handleChoosePlayer}></AllPlayers> : <SelectedPlayer choosePlayer={choosePlayer} handleRemove={handleRemove} handleToggleBtn={handleToggleBtn}></SelectedPlayer>
         }
       </div>
     </div>

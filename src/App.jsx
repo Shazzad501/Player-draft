@@ -15,6 +15,9 @@ function App() {
     player: true,
     sys: 'available'
   })
+  // handle choosPlayer btn
+  const [choosePlayer, setChoosePlayer] = useState([])
+
 
   // coin handle function
   const handleCoin = ()=>{
@@ -36,7 +39,23 @@ function App() {
       })
     }
   }
-  console.log(isActive)
+     // handlechoose player btn
+     const handleChoosePlayer = (player)=>{
+      const isExist = choosePlayer.find(prevplayer=> prevplayer.playerId === player.playerId);
+      if(!isExist){
+        setChoosePlayer([...choosePlayer, player]);
+      }
+      else{
+        toast.error('Player already selected!!');
+      }
+    }
+
+    // handle remove btn
+
+    const handleRemove = (id)=>{
+      const updatePlayer = choosePlayer.filter(player => player.playerId !== id);
+      setChoosePlayer(updatePlayer);
+    }
   return (
     <>
       {/* Navbar */}
@@ -44,7 +63,11 @@ function App() {
       {/* Banner section */}
       <Banner handleCoin={handleCoin}></Banner>
       {/* Toggle btn  and toggle section*/}
-      <ToggleBtn handleToggleBtn={handleToggleBtn}
+      <ToggleBtn 
+      handleToggleBtn={handleToggleBtn}
+      handleChoosePlayer={handleChoosePlayer}
+      handleRemove={handleRemove}
+      choosePlayer={choosePlayer}
        isActive={isActive}>
        </ToggleBtn>
       {/* NewsLatter */}
@@ -54,5 +77,4 @@ function App() {
     </>
   )
 }
-
 export default App
