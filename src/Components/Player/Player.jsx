@@ -1,6 +1,7 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
-const Player = ({player, handleChoosePlayer}) => {
+const Player = ({player, handleChoosePlayer, coin}) => {
   const {playerId, name, country, image, playerType, playingStyle, biddingPrice} = player;
   return (
     <div>

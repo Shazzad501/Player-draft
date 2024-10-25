@@ -2,7 +2,7 @@ import { useState } from "react";
 import AllPlayers from "../AllPlayers/AllPlayers";
 import SelectedPlayer from "../SelectedPlayer/SelectedPlayer";
 
-const ToggleBtn = ({handleToggleBtn, isActive, handleChoosePlayer, choosePlayer, handleRemove}) => {
+const ToggleBtn = ({handleToggleBtn, isActive, handleChoosePlayer, choosePlayer, handleRemove, coin}) => {
     
   return (
     <div>
@@ -23,7 +23,7 @@ const ToggleBtn = ({handleToggleBtn, isActive, handleChoosePlayer, choosePlayer,
       </div>
       <div>
         {
-          isActive.player ? <AllPlayers handleChoosePlayer={handleChoosePlayer}></AllPlayers> : <SelectedPlayer choosePlayer={choosePlayer} handleRemove={handleRemove} handleToggleBtn={handleToggleBtn}></SelectedPlayer>
+          isActive.player ? <AllPlayers handleChoosePlayer={handleChoosePlayer} coin={coin}></AllPlayers> : <SelectedPlayer choosePlayer={choosePlayer} handleRemove={handleRemove} handleToggleBtn={handleToggleBtn}></SelectedPlayer>
         }
       </div>
     </div>

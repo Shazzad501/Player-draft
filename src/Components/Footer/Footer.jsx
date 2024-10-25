@@ -10,7 +10,7 @@ const Footer = () => {
             <p className="font-bold text-base">Get the latest updates and news right in your inbox!</p>
             <div className="flex gap-2 items-center w-[90%] lg:w-[35%]">
             <input type="email" placeholder="Enter your email:" className="bg-white border-2 text-black text-base px-2 py-2.5 rounded-md w-[85%]"/>
-            <button className="btn bg-gradient-to-bl from-yellow-400 to-blue-300">Subscribe</button>
+            <button className="btn bg-gradient-to-bl from-red-300 to-blue-300">Subscribe</button>
             </div>
           </div>
         </div>
@@ -39,7 +39,7 @@ const Footer = () => {
           <p className="font-semibold text-base">Subscribe to our newsletter for the latest updates.</p>
           <div className="flex">
           <input type="email" placeholder="Enter your email:" className="bg-white border-2 border-r-0 text-black text-base p-2 rounded-md w-[85%] rounded-r-none"/>
-          <button className="btn rounded-l-none bg-gradient-to-bl from-yellow-400 to-blue-300">Subscribe</button>
+          <button className="btn rounded-l-none bg-gradient-to-bl from-red-300 to-blue-300">Subscribe</button>
           </div>
         </div>
       </div>
