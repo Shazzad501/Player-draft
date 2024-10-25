@@ -18,7 +18,7 @@ const ToggleBtn = ({handleToggleBtn, isActive, handleChoosePlayer, choosePlayer,
               Available</button>
 
             <button onClick={()=> handleToggleBtn('selected')}
-            className={`${!isActive.player ? "btn rounded-l-none bg-yellow-400" : "btn rounded-l-none bg-white"}`}>Selected (0)</button>
+            className={`${!isActive.player ? "btn rounded-l-none bg-yellow-400" : "btn rounded-l-none bg-white"}`}>Selected ({choosePlayer.length})</button>
           </div>
       </div>
       <div>
