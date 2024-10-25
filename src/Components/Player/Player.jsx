@@ -30,7 +30,7 @@ const Player = ({player, handleChoosePlayer}) => {
             <button onClick={()=> handleChoosePlayer(player)} className="btn btn-sm">Choose Player</button>
           </div>
         </div>
-      </div>
+      </div> 
     </div>
   );
 };

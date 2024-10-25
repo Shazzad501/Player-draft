@@ -42,11 +42,15 @@ function App() {
      // handlechoose player btn
      const handleChoosePlayer = (player)=>{
       const isExist = choosePlayer.find(prevplayer=> prevplayer.playerId === player.playerId);
-      if(!isExist){
+
+
+      if(!isExist && choosePlayer.length < 7){
         setChoosePlayer([...choosePlayer, player]);
+        toast.success("Player successfully added!!")
       }
       else{
-        toast.error('Player already selected!!');
+       isExist && toast.error("Player already existed!!");
+       !(choosePlayer.length < 7) && toast.error("Maximum player added!!")
       }
     }
 
@@ -55,6 +59,7 @@ function App() {
     const handleRemove = (id)=>{
       const updatePlayer = choosePlayer.filter(player => player.playerId !== id);
       setChoosePlayer(updatePlayer);
+      toast.info("Player deleted!!!  If you add new player click Add more player button.")
     }
   return (
     <>

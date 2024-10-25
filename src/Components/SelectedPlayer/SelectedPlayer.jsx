@@ -23,7 +23,7 @@ const SelectedPlayer = ({choosePlayer, handleRemove, handleToggleBtn}) => {
       }
       <button
       onClick={()=>handleToggleBtn('available')}
-       className="btn bg-yellow-400 w-[150px]">Add more plyer</button>
+       className="btn bg-yellow-400 w-[50%] md:w-[25%] lg:w-[20%]">Add more player</button>
     </div>
   );
 };
