@@ -1,6 +1,6 @@
 Project Name: Player Draft
 
-Live site link:- https://superlative-sherbet-1e547d.netlify.app/
+Live site link:- https://thriving-donut-877ef2.netlify.app/
 
 Description:-
 The project appears to be a Player Draft tool, allowing users to create and manage drafts,
