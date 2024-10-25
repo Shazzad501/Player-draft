@@ -4,7 +4,7 @@ const Banner = ({handleCoin}) => {
     <div className="w-11/12 mx-auto bg-black rounded-lg mb-14 mt-28">
       <div className="flex items-center justify-center text-center flex-col banner p-10 text-white">
         <div>
-          <img src="../../src/assets/banner-main.png" alt="" />
+          <img src="https://i.ibb.co.com/6yJ77Pg/banner-main.png" alt="" />
         </div>
         <h2 className="font-bold text-3xl mt-5">Assemble Your Ultimate Dream 11 Cricket Team</h2>
         <p className="font-semibold text-base mt-3">Beyond Boundaries Beyond Limits</p>

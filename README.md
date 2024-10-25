@@ -1,8 +1,26 @@
-# React + Vite
+Project Name: Player Draft
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live site link:- https://superlative-sherbet-1e547d.netlify.app/
 
-Currently, two official plugins are available:
+Description:-
+The project appears to be a Player Draft tool, allowing users to create and manage drafts,
+ likely for fantasy sports or similar team selection activities. Users can add players to 
+ their draft, view selections, and possibly organize teams. The layout emphasizes 
+ simplicity for smooth navigation and use.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+This project uses various technologies, including HTML, CSS, and the Tailwind CSS framework
+ along with the Daisy UI component library. It incorporates JavaScript and JSX with the 
+ React library, using Vite as the development environment. React Toastify is also included 
+ for notifications. Finally, the project is deployed on Netlify.
+
+
+
+This project offers a range of features, including a beautiful, responsive design with a 
+well-crafted navigation bar. A 'Claim Free Credit' button allows users to earn 500M coins 
+per click, visible in the navigation bar, which can be used to buy players. The main 
+section includes player cards with a 'Choose Player' button; if your coin balance is lower
+than the player price, you cannot buy the player. You can add up to 7 players to your 
+team. The project also features alerts for low coins or a full roster, plus a footer and a 
+playful newsletter subscription button.

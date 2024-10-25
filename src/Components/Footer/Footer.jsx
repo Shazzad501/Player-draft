@@ -17,7 +17,7 @@ const Footer = () => {
       </div>
       {/* logo */}
       <div>
-        <img src="../../src/assets/logo-footer.png" alt="" />
+        <img src="https://i.ibb.co.com/9TnWBND/logo-footer.png" alt="" />
       </div>
       {/* Inportant links */}
       <div className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-3 gap-9">
