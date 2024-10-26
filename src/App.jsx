@@ -44,15 +44,15 @@ function App() {
       const isExist = choosePlayer.find(prevplayer=> prevplayer.playerId === player.playerId);
 
 
-      if(!isExist && (choosePlayer.length < 6) && (coin > player.biddingPrice)){
+      if(!isExist && (choosePlayer.length < 6) && (coin >= player.biddingPrice)){
         setCoin(coin - player.biddingPrice)
         setChoosePlayer([...choosePlayer, player]);
-        toast.success("Player successfully added!!")
+        toast.success(`${player.name} successfully added!!`)
       }
       else{
        isExist && toast.error("Player already existed!!");
        !(choosePlayer.length < 6) && toast.error("Maximum player added!!")
-       !(coin > player.biddingPrice) && toast.error("Not enought coin!!")
+       !(coin >= player.biddingPrice) && toast.error("Not enought coin!!")
       }
     }
 
