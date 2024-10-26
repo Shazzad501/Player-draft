@@ -21,7 +21,16 @@ function App() {
 
   // coin handle function
   const handleCoin = ()=>{
-    toast.info("Coin successfully Added!!");
+    toast.info("Coin successfully Added!!",{
+      position: "top-center",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+     });
     setCoin(coin + 500);
   }
   // handle toggle btn
@@ -47,12 +56,48 @@ function App() {
       if(!isExist && (choosePlayer.length < 6) && (coin >= player.biddingPrice)){
         setCoin(coin - player.biddingPrice)
         setChoosePlayer([...choosePlayer, player]);
-        toast.success(`${player.name} successfully added!!`)
+        toast.success(`${player.name} successfully added!!`,{
+          position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        })
       }
       else{
-       isExist && toast.error("Player already existed!!");
-       !(choosePlayer.length < 6) && toast.error("Maximum player added!!")
-       !(coin >= player.biddingPrice) && toast.error("Not enought coin!!")
+       isExist && toast.error(`${player.name}already existed!!`,{
+        position: "top-left",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+       });
+       !(choosePlayer.length < 6) && toast.error("Maximum player added!!",{
+        position: "top-left",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+       })
+       !(coin >= player.biddingPrice) && toast.error("Not enought coin!!",{
+        position: "top-left",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+       })
       }
     }
 
